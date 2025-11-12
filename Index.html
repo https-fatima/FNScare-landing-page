@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nurtura - AI-Powered Postpartum Support</title>
+    <title>Nurtura - Postpartum Support</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Animated Background Elements -->
+    <!-- Background Elements -->
     <div class="floating-elements">
         <div class="floating-circle circle-1"></div>
         <div class="floating-circle circle-2"></div>
@@ -23,6 +23,7 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#quiz" class="nav-link">Quiz</a></li>
                 <li><a href="#features" class="nav-link">Features</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#waitlist" class="nav-link">Waitlist</a></li>
@@ -34,31 +35,30 @@
             </div>
         </div>
     </nav>
-
-    <!-- Hero Section -->
+    <!-- Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-badge">
                 <span>💖 Made for Hong Kong Mothers</span>
             </div>
-            <h1 class="hero-title">You're not alone on this <span class="highlight">beautiful journey</span></h1>
-            <p class="hero-description">Nurtura provides personalized AI-powered support for new mothers in Hong Kong. Get 24/7 mental wellness guidance, connect with understanding moms, and track your wellbeing—all in one safe, colorful space.</p>
+            <h1 class="hero-title">We are here to provide all the support<span class="highlight"> on your beautiful journey</span></h1>
+            <p class="hero-description">Nurtura provides personalized care for new mothers in Hong Kong. Get 24/7 mental wellness guidance with AI-therapy sessions, connect with understanding moms, and track your wellbeing—all in one safe, colorful space.</p>
             <div class="hero-buttons">
                 <button class="cta-button primary">Join Our Waitlist</button>
                 <button class="cta-button secondary">Learn More</button>
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Moms Supported</div>
+                    <div class="stat-number"></div>
+                    <div class="stat-label"></div>
                 </div>
                 <div class="stat">
                     <div class="stat-number">24/7</div>
                     <div class="stat-label">AI Companion</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-label">Satisfaction</div>
+                    <div class="stat-number">Everyday</div>
+                    <div class="stat-label">daily reminders</div>
                 </div>
             </div>
         </div>
@@ -70,8 +70,8 @@
                             <div class="app-time">9:41</div>
                         </div>
                         <div class="app-content">
-                            <div class="chat-bubble ai">How are you feeling today? 💭</div>
-                            <div class="chat-bubble user">A bit tired but happy! 😊</div>
+                            <div class="chat-bubble ai">What are your thoughts for today? 💭</div>
+                            <div class="chat-bubble user">I am feeling really tired <button type="button"></button> still happy 😊</div>
                             <div class="chat-bubble ai">Remember to rest when baby sleeps! 🌙</div>
                         </div>
                     </div>
@@ -81,34 +81,118 @@
                 <div class="heart">💗</div>
                 <div class="heart">💝</div>
                 <div class="heart">💞</div>
+                <div class="heart">❤️</div>
+                <div class="heart">🥰</div>
             </div>
         </div>
     </section>
 
+<!-- Quiz Section -->
+<section id="quiz" class="quiz-section">
+    <div class="quiz-container">
+        <div class="quiz-card">
+            <h2 class="quiz-title">Find Your Mom Tribe 💕</h2>
+            <p class="quiz-subtitle">Take this quick quiz to match with mothers who share similar experiences</p>
+            
+            <div class="quiz-progress">
+                <div class="progress-bar"></div>
+            </div>
+            
+            <div class="quiz-content">
+                <div class="question active" data-question="1">
+                    <h3>How far along are you in your motherhood journey?</h3>
+                    <div class="options">
+                        <button class="option-btn" data-value="pregnant">Currently pregnant</button>
+                        <button class="option-btn" data-value="0-3">0-3 months postpartum</button>
+                        <button class="option-btn" data-value="4-6">4-6 months postpartum</button>
+                        <button class="option-btn" data-value="7-12">7-12 months postpartum</button>
+                    </div>
+                </div>
+                
+                <div class="question" data-question="2">
+                    <h3>What was your birth experience like?</h3>
+                    <div class="options">
+                        <button class="option-btn" data-value="natural">Natural birth</button>
+                        <button class="option-btn" data-value="c-section">C-section</button>
+                        <button class="option-btn" data-value="assisted">Assisted delivery</button>
+                        <button class="option-btn" data-value="other">Other experience</button>
+                    </div>
+                </div>
+                
+                <div class="question" data-question="3">
+                    <h3>What's your biggest challenge right now?</h3>
+                    <div class="options">
+                        <button class="option-btn" data-value="sleep">Sleep deprivation</button>
+                        <button class="option-btn" data-value="feeding">Feeding issues</button>
+                        <button class="option-btn" data-value="isolation">Feeling isolated</button>
+                        <button class="option-btn" data-value="recovery">Physical recovery</button>
+                    </div>
+                </div>
+                
+                <div class="question" data-question="4">
+                    <h3>What type of support are you looking for?</h3>
+                    <div class="options">
+                        <button class="option-btn" data-value="emotional">Emotional support</button>
+                        <button class="option-btn" data-value="practical">Practical advice</button>
+                        <button class="option-btn" data-value="friendship">Making mom friends</button>
+                        <button class="option-btn" data-value="all">All of the above!</button>
+                    </div>
+                </div>
+                
+                <div class="question" data-question="5">
+                    <h3>Where in Hong Kong are you based?</h3>
+                    <div class="options">
+                        <button class="option-btn" data-value="hk-island">Hong Kong Island</button>
+                        <button class="option-btn" data-value="kowloon">Kowloon</button>
+                        <button class="option-btn" data-value="new-territories">New Territories</button>
+                        <button class="option-btn" data-value="anywhere">Anywhere in HK!</button>
+                    </div>
+                </div>
+                
+                <div class="quiz-result">
+                    <h3>Perfect Match! 🌟</h3>
+                    <p>Based on your answers, we'll connect you with mothers who share similar experiences in your area.</p>
+                    <div class="match-tags">
+                        <span class="tag">Similar journey stage</span>
+                        <span class="tag">Shared experiences</span>
+                        <span class="tag">Local support</span>
+                    </div>
+                    <button class="cta-button primary join-community">Join Community Waitlist</button>
+                </div>
+            </div>
+            
+            <div class="quiz-navigation">
+                <button class="nav-btn prev-btn" disabled>Previous</button>
+                <button class="nav-btn next-btn">Next</button>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">How Nurtura Cares for You</h2>
-            <p class="section-subtitle">Three beautiful ways we support your motherhood journey</p>
+            <h2 class="section-title">How Nurtura Genuinely Cares for You</h2>
+            <p class="section-subtitle">Three beautiful and special ways we support your motherhood journey</p>
             
             <div class="features-grid">
                 <div class="feature-card" data-aos="fade-up">
-                    <div class="feature-icon">🤖</div>
-                    <h3>AI Wellness Companion</h3>
-                    <p>24/7 empathetic chatbot trained in postpartum mental health. Get instant support with personalized exercises and coping strategies.</p>
+                    <div class="feature-icon">🤱🏽</div>
+                    <h3>ADVANCED AI BASED THERAPY</h3>
+                    <p>24/7 stigma-free AI support trained in postpartum mental health. Get instant support with personalized exercises and coping strategies.</p>
                     <ul class="feature-list">
-                        <li>✓ CBT-based conversations</li>
+                        <li>✓ NLP + CBT-based conversations</li>
                         <li>✓ Mood tracking & insights</li>
-                        <li>✓ Personalized wellness tips</li>
+                        <li>✓ Personalized wellness tips (get instant support with a professional guarantee)</li>
                     </ul>
                 </div>
                 
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-icon">📊</div>
-                    <h3>Smart Health Tracking</h3>
-                    <p>Beautifully track mood, sleep, and baby patterns. Get gentle insights and loving alerts about your wellbeing trends.</p>
+                    <h3>Health Tracking</h3>
+                    <p>Beautifully tracks mood, sleep, and baby patterns. Get daily insights and loving alerts about your wellbeing trends.</p>
                     <ul class="feature-list">
-                        <li>✓ One-tap mood logging</li>
+                        <li>✓ Mood logging</li>
                         <li>✓ Sleep pattern analysis</li>
                         <li>✓ Progress visualization</li>
                     </ul>
@@ -116,42 +200,41 @@
                 
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon">👥</div>
-                    <h3>Safe Community Hub</h3>
-                    <p>Connect anonymously with other Hong Kong moms who truly understand. Share, support, and grow together.</p>
+                    <h3>Personalised Community Hub</h3>
+                    <p>Connect anonymously with other new Hong Kong moms who truly understand what you are going through. Share, support, and grow together.</p>
                     <ul class="feature-list">
-                        <li>✓ Stage-based matching</li>
-                        <li>✓ Anonymous sharing</li>
-                        <li>✓ Expert-led groups</li>
+                        <li>✓ Get to link with other mothers sharing same experiences</li>
+                        <li>✓ Safe empathy with anonymous sharing</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Hong Kong Special Section -->
+    <!-- Special Section -->
     <section id="about" class="hk-special">
         <div class="container">
             <h2 class="section-title">Built with Love for Hong Kong Mothers</h2>
             <div class="hk-grid">
                 <div class="hk-item">
                     <div class="hk-icon">🏙️</div>
-                    <h4>Local Understanding</h4>
-                    <p>Content tailored for Hong Kong's unique lifestyle and challenges</p>
+                    <h4>Government Subsidies & Exclusive Deals</h4>
+                    <p>Get alert for subsidies provided by the government and stay tuned for the exclusive deals</p>
                 </div>
                 <div class="hk-item">
-                    <div class="hk-icon">🔄</div>
-                    <h4>Bilingual Support</h4>
-                    <p>Full functionality in both English and Cantonese</p>
+                    <div class="hk-icon">🗣️</div>
+                    <h4>Multilingual Support</h4>
+                    <p>Full functionality in lnaguages such as English, Urdu, Tamil, Mandarin and Cantonese</p>
                 </div>
                 <div class="hk-item">
-                    <div class="hk-icon">🤝</div>
+                    <div class="hk-icon">🧑🏽‍⚕️</div>
                     <h4>Local Network</h4>
                     <p>Connected with Hong Kong therapists and support groups</p>
                 </div>
                 <div class="hk-item">
                     <div class="hk-icon">🎯</div>
-                    <h4>Cultural Relevance</h4>
-                    <p>Designed with Asian family dynamics in mind</p>
+                    <h4>Upcoming meet-ups</h4>
+                    <p>Get notified for all upcoming gatherings</p>
                 </div>
             </div>
         </div>
@@ -168,8 +251,8 @@
                     <button class="submit-button">Join Waitlist 🌸</button>
                 </div>
                 <div class="waitlist-benefits">
-                    <div class="benefit">🎁 Early access bonus</div>
-                    <div class="benefit">💝 Special welcome gift</div>
+                    <div class="benefit">🎁 Early access bonus for premium subscriptions</div>
+                    <div class="benefit">💝 Special welcome gift (small keychain)</div>
                     <div class="benefit">👑 Founding member status</div>
                 </div>
             </div>
@@ -192,7 +275,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Created with 💙 by Team FNS Care for JUMPSTARTER ZPIRE</p>
+                <p>Created with ❤️ by Team FNSCare for JUMPSTARTER ZPIRE</p>
             </div>
         </div>
     </footer>
